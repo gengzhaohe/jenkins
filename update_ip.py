@@ -7,8 +7,9 @@ def main():
     #     file.close()
     os.system("cmd /c ipconfig > ip.txt")
     os.system("git add .")
-    os.system("git commit -m ip")
     os.system("git status")
+    os.system("git commit -m ip")
+    os.system("git push")
 
 
 main()
