@@ -34,11 +34,12 @@ def get_local_ip2():
 
 
 def main():
+    os.system("git pull --rebase")
     # 调用函数获取本机 IP
     local_ip = get_local_ip()
     print(local_ip)
     
-    with open("ip.txt", "wb") as file:
+    with open("ip.txt", "wbg") as file:
         pickle.dump(local_ip, file)
 
     #     subprocess.run(["ipconfig"], stdout=file, text=True)

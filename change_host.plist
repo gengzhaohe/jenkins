@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ata.change_ata_host</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/huajiao/anaconda3/bin/python3</string>
+        <string>/Users/huajiao/myprj/tools/jenkins/change_host.py</string>
+    </array>
+    <key>UserName</key>
+    <string>root</string>
+    <key>StartInterval</key>
+    <integer>600</integer>
+    <key>StandardOutPath</key>
+    <string>//Users/huajiao/myprj/tools/jenkins/logfile.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/huajiao/myprj/tools/jenkins/error.log</string>
+</dict>
+</plist>
+
