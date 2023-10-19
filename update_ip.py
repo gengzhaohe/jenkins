@@ -4,6 +4,8 @@ import socket
 
 import netifaces
 
+import pickle
+
 def get_local_ip():
     ips = []
     interfaces = netifaces.interfaces()
@@ -36,9 +38,9 @@ def main():
     local_ip = get_local_ip()
     print(local_ip)
     
-    with open("ip.txt", "w") as file:
-        file.write(str(local_ip))
-        file.close()
+    with open("ip.txt", "wb") as file:
+        pickle.dump(local_ip, file)
+
     #     subprocess.run(["ipconfig"], stdout=file, text=True)
     #     file.close()
 
