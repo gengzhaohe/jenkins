@@ -39,7 +39,7 @@ def main():
     local_ip = get_local_ip()
     print(local_ip)
     
-    with open("ip.txt", "wbg") as file:
+    with open("ip.txt", "wb") as file:
         pickle.dump(local_ip, file)
 
     #     subprocess.run(["ipconfig"], stdout=file, text=True)
