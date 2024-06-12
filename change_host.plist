@@ -6,7 +6,7 @@
     <string>ata.change_ata_host</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/huajiao/anaconda3/bin/python3</string>
+        <string>/opt/miniconda3/bin/python3</string>
         <string>/Users/huajiao/myprj/tools/jenkins/change_host.py</string>
     </array>
     <key>UserName</key>
